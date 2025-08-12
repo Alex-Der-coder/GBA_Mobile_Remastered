@@ -455,3 +455,10 @@ li.hide {
         align-content: center;
     }
 }
+
+.play {
+background-color: red;
+border-radius: 30%;
+width: 4%;
+position: absolute;
+  }
