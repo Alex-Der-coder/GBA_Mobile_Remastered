@@ -9,10 +9,10 @@ const gamepadMap = {
     1: 1,   // B (Bouton 1)
     8: 2,   // SELECT
     9: 3,   // START
-    12: 4,  // Haut (D-pad Up)
-    13: 5,  // Bas
-    14: 6,  // Gauche
-    15: 7,  // Droite
+    12: 6,  // Haut (D-pad Up)6
+    13: 7,  // Bas 7
+    14: 4,  // Gauche 4
+    15: 5,  // Droite 5
     4: 8,   // L
     5: 9    // R
 };
