@@ -78,6 +78,8 @@ canvas.textureSmooth {
     image-rendering: auto;
     image-rendering: optimizeQuality;
     -ms-interpolation-mode: bicubic;
+    max-width: 345px;
+  max-height: 300px;
 }
 
 canvas.texturePixelated {
