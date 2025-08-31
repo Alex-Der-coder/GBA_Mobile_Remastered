@@ -30,13 +30,25 @@
                 <li id="pause" class="hide">Pause</li>
                 <li id="restart">Restart</li>
                 <li>Settings
+                    
                     <ul>
                         <li><input type="checkbox" id="skip_boot"> Skip Boot Intro</li>
                         <li><input type="checkbox" id="toggleSmoothScaling" checked="checked"> Smooth Scaling</li>
-                        <li><input type="checkbox" id="toggleDynamicSpeed"> Dynamic Speed</li>
+                        <li hidden><input type="checkbox" id="toggleDynamicSpeed" hidden> Dynamic Speed</li>
                         <li><input type="checkbox" id="offthread-cpu" checked="checked"> CPU off-thread</li>
                         <li><input type="checkbox" id="offthread-gpu" checked="checked"> GPU off-thread</li>
                         <li><input type="checkbox" id="sound"> Sound</li>
+                        <li>
+                    <span id="speed">Speed Settings</span>
+                    <ul>
+                        <li>
+                            <input type="range" id="speedset" hidden>
+                            <button class="speed">x1</button>
+                            <button class="speed">x2</button>
+                            <button class="speed">x3</button>
+                        </li>
+                    </ul>
+                </li>
                         <li>GBA Bindings
                             <ul>
                                 <li id="key_a"><span>A</span></li>
@@ -89,14 +101,6 @@
                     </ul>
                 </li>
                 <li id="fullscreen">Fullscreen</li>
-                <li>
-                    <span id="speed">Speed</span>
-                    <ul>
-                        <li>
-                            <input type="range" id="speedset">
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </div>
         <div id="main">
@@ -184,15 +188,8 @@
     <script src="../modules/XAudioJS/XAudioServer.js"></script>
     <script src="../modules/CoreGlueCode.js"></script>
     
-    <!-- show a warning when leaving the page -->
-    <script>
-        window.addEventListener('beforeunload', function(e) {
-            // Cancel the event
-            e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
-            // Chrome requires returnValue to be set
-            e.returnValue = '';
-        });
-    </script>
+</script>
+ 
 </body>
 
 </html>
